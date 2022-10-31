@@ -1,0 +1,61 @@
+<!DOCTYPE html> <html>
+<head>
+<meta charset="UTF-8">
+<title>Fake News Detection System</title> <link
+href='https://fonts.googleapis.com/css?family=Pacifico ' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Hind:300 ' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Open+San s+Condensed:300' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text], select, textarea {
+width: 50%;
+padding: 10px;
+border: 3px solid #ccc; border-radius: 1px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: horizontal;
+} button {
+background-color: #4CAF50; color: white;
+padding: 14px 20px; margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 50%; }
+button:hover { opacity: 0.8;
+}
+h1 {
+text-align: center;
+}
+p{
+text-align: center;
+}
+div {
+text-align: center;
+}
+body {background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+   </style>
+</head>
+<body>
+<p style="padding: 0 20em 20em 0"> <div class="login">
+
+
+<div class="results">
+     {% if prediction == [[False]]%}
+<h1 style="color:red;">Looking Spam News 📰⚠</h1>
+     {% elif prediction == [[True]]%}
+<h1 style="color:green;"><b>Looking Real News </b></h1>
+📰
+{% endif %}
+       </div>
+
+    <form action="http://127.0.0.1:5000/" method="POST">
+
+<button type="submit" class="btn btn-primary btn-block ">Predict For Another News</button>
+
+        </form>
+</div>
+</p>
+</body>
+</html>l>

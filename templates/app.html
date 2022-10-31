@@ -1,0 +1,52 @@
+<!DOCTYPE html> <html>
+<head>
+<meta charset="UTF-8">
+<title>Fake News Detection System</title> <link
+href='https://fonts.googleapis.com/css?family=Pacifico ' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Hind:300 ' rel='stylesheet' type='text/css'>
+<link
+href='https://fonts.googleapis.com/css?family=Open+San s+Condensed:300' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text], select, textarea {
+width: 50%;
+padding: 10px;
+border: 3px solid #ccc; border-radius: 1px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: horizontal;
+} button {
+background-color: #4CAF50; color: white;
+padding: 14px 20px; margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 50%; }
+button:hover { opacity: 0.8;
+}
+h1 {
+text-align: center;
+}
+p{
+text-align: center;
+}
+div {
+text-align: center;
+}
+body {background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+   </style>
+</head>
+<body>
+<p style="padding: 0 10em 10em 0"> <div class="login">
+<h1 style="text-align:center;">Fake News Detector </br> By</br> Ruchir Namjoshi </br> Vishwesh Porwal </br> Diksha Patidar </h1>
+<form action="http://127.0.0.1:5000/predict" method="POST">
+<textarea name="message" rows="6" cols="20" required="required" style="font-size: 18pt"></textarea>
+<br> </br>
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+   </form>
+</div>
+</p>
+</body>
+</html>
